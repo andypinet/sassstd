@@ -1,0 +1,3 @@
+@function to-color($value) {
+  @return _sc-to-color($value);
+}

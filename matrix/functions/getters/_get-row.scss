@@ -1,0 +1,19 @@
+/// Return row at `$index` from `$matrix`
+/// @group getters
+/// @require {function} rows
+/// @param {Matrix} $matrix - matrix
+/// @param {Number} $index - index
+/// @return {List}
+@function get-row($matrix, $index) {
+  @if type-of($index) != number {
+    @warn "Invalid row index.";
+    @return false;
+  }
+
+  @if abs($index) > rows($matrix) {
+    @warn "Out of bound row index.";
+    @return false;
+  }
+
+  @return nth($matrix, $index);
+}

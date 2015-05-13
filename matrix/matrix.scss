@@ -1,0 +1,78 @@
+// Displaying matrix
+@import "functions/misc/display";
+
+// Getting number of rows in matrix
+@import "functions/misc/rows";
+
+// Getting number of columns in matrix
+@import "functions/misc/columns";
+
+// Validate coordinates pairs
+@import "functions/helpers/valid-coords";
+
+// Creating a matrix
+@import "functions/init/matrix";
+
+// Assigning values to matrix
+@import "functions/setters/set-entry";
+
+// Reading values from matrix
+@import "functions/getters/get-entry";
+
+// Reading values from matrix
+@import "functions/getters/get-row";
+
+// Swapper two rows from matrix
+@import "functions/swap/swap-rows";
+
+// Assigning values to matrix
+@import "functions/setters/set-row";
+
+// Checking if matrix is square
+@import "functions/checkers/is-square";
+
+// Transpose a matrix
+@import "functions/setters/add-row";
+
+// Transpose a matrix
+@import "functions/setters/add-column";
+
+// Assigning values to matrix
+@import "functions/setters/set-column";
+
+// Reading values from matrix
+@import "functions/getters/get-column";
+
+// Checking if all values from matrix are numbers
+@import "functions/checkers/is-numeric";
+
+// Checking if matrix is diagonal
+@import "functions/checkers/is-diagonal";
+
+// Is triangular helper
+@import "functions/checkers/is-triangular";
+
+// Creating a matrix with diagonal filled
+@import "functions/init/unit-matrix";
+
+// Swapping two values from matrix
+@import "functions/swap/swap-entries";
+
+// Swapper two columns from matrix
+@import "functions/swap/swap-columns";
+
+// Checking if matrix is diagonal
+@import "functions/checkers/is-upper-triangular";
+
+// Checking if matrix is diagonal
+@import "functions/checkers/is-lower-triangular";
+
+// Add two matrices
+@import "functions/misc/add-matrices";
+
+// Transpose a matrix
+@import "functions/misc/transpose";
+
+// Displaying matrix
+@import "functions/checkers/is-symmetric";
+

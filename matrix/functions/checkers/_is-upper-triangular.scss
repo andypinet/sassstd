@@ -1,0 +1,9 @@
+/// Checks whether `$matrix` is upper triangular with `$flag` option
+/// @group checkers
+/// @param {Matrix} $matrix - matrix
+/// @param {String | Null} $flag (null) - advanced option, either `null` or `strict` or `unit` or `atom`
+/// @return {Bool}
+/// @require {function} _is-triangular
+@function is-upper-triangular($matrix, $flag: null) {
+  @return _is-triangular($matrix, top, $flag);
+}

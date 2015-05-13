@@ -1,0 +1,18 @@
+/// Assign `$value` at `$matrix[$coords[1], $coords[2]]`
+/// @group setters
+/// @param {Matrix} $matrix - matrix to update
+/// @param {List} $coords - (x y) coordinates
+/// @param {*} $value - value to assign at $matrix[$x, $y]
+/// @return {Matrix}
+/// @require {function} _valid-coords
+@function set-entry($matrix, $coords, $value) {
+  @if length($coords) == 1 {
+    $coords: ($coords $coords);
+  }
+
+  @if _valid-coords($coords, $matrix) {
+    @return set-nth($matrix, nth($coords, 1), set-nth(nth($matrix, nth($coords, 1)), nth($coords, 2), $value));
+  }
+
+  @return false;
+}

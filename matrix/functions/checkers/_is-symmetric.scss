@@ -1,0 +1,13 @@
+// Checks whether a matrix is symetric
+/// @group checkers
+// @param {Matrix} $matrix - matrix
+// @require {function} transpose
+// @require {function} is-square
+// @return {Bool}
+@function is-symmetric($matrix) {
+  @if not is-square($matrix) {
+    @return false;
+  }
+
+  @return $matrix == transpose($matrix);
+}

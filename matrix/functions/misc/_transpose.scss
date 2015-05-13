@@ -1,0 +1,19 @@
+/// Translate `$matrix` on its diagonal axe
+/// @group misc
+/// @param {Matrix} $matrix - matrix
+/// @return {Matrix}
+/// @require {function} matrix
+/// @require {function} columns
+/// @require {function} rows
+/// @require {function} get-entry
+/// @require {function} set-entry
+@function transpose($matrix) {
+  $new-matrix: matrix(columns($matrix), rows($matrix));
+  @for $i from 1 through rows($matrix) {
+    @for $j from 1 through columns($matrix) {
+      $entry: get-entry($matrix, ($i $j));
+      $new-matrix: set-entry($new-matrix, ($j $i), $entry);
+    }
+  }
+  @return $new-matrix;
+}
