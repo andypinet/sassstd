@@ -6,4 +6,53 @@
 		@include should( expect( true ), to( be( true )));
 	}
 }
+
+@mixin trans-map-styleheet($style) {
+	@if length($style) > 0 {
+		@if type-of($style) != map {
+			@error "you need a map not a " + type-of($style);
+		}
+	}
+	
+	@each $k,$v in $style {
+		#{$k}: #{$v};
+	}	
+}
+
+@mixin interface($style: (), $ast: ()) {
+	.sel > i {
+		@include trans-map-styleheet($style);	
+	}
+	
+	.sertt > saads {
+		@include trans-map-styleheet($ast);
+	}
+	
+	&%sb {
+		color: blue;
+	}
+	
+	margin: 10px 0 {
+		left: 20px;
+	};
+	
+	@content;
+}
+
+.tessds {
+	@extend %sb;
+	echo: &;
+}
+
+.test {
+	$sasds: ( 
+		sdsd: sdsds, 
+		sdssd: random(),
+		margin-left: 23213	
+	);
+	@include interface( $sasds ) {
+
+	};
+}
+
 @include runner-end;
