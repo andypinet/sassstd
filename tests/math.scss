@@ -1,0 +1,9 @@
+@import "bootcamp"; // or "[node_modules|bower_components]/bootcamp/dist/bootcamp" if you didn't set load_paths
+
+@include runner-start;
+@include describe("A suite") {
+	@include it("contains spec with an expectation") {
+		@include should( expect( true ), to( be( true )));
+	}
+}
+@include runner-end;

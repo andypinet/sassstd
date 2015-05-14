@@ -1,0 +1,29 @@
+{
+  "name": "sassstd",
+  "version": "1.0.0",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "bootcamp": "^1.1.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-init": "^0.3.2"
+  },
+  "devDependencies": {
+    "bootcamp": "^1.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andypinet/sassstd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andypinet/sassstd/issues"
+  },
+  "homepage": "https://github.com/andypinet/sassstd#readme",
+  "description": ""
+}
