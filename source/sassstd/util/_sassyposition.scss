@@ -1,0 +1,49 @@
+@mixin position($position, $left, $top, $right, $bottom) {
+	position: $position;
+	left: $left;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+}
+
+@mixin position-left-top($position) {
+	@include position($position, 0, 0, auto, auto);
+}
+
+@mixin position-left-bottom($position) {
+	@include position($position, 0, auto, auto, 0);
+}
+
+@mixin position-right-top($position) {
+	@include position($position, auto, 0, 0, auto);
+}
+
+@mixin position-right-bottom($position) {
+	@include position($position, auto, auto, 0, 0);
+}
+
+@mixin position-center-center($position) {
+	@include position($position, 0, 0, 0, 0);
+	margin: auto;
+}
+
+@mixin position-left-center($position) {
+	@include position-center-center($position);
+	right: auto;
+}
+
+@mixin position-top-center($position) {
+	@include position-center-center($position);
+	bottom: auto;
+}
+
+@mixin position-right-center($position) {
+	@include position-center-center($position);
+	left: auto;
+}
+
+@mixin position-bottom-center($position) {
+	@include position-center-center($position);
+	top: auto;
+}
+
