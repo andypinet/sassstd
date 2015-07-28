@@ -1,0 +1,20 @@
+{
+  "name": "sassstd",
+  "version": "0.2.0",
+  "homepage": "https://github.com/andypinet/sassstd",
+  "authors": [
+    "lingbaichao <lingbaichao@yingle.com>"
+  ],
+  "description": "sass std lib",
+  "keywords": [
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
