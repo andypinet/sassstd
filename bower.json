@@ -9,7 +9,17 @@
   "keywords": [
     "sass"
   ],
-  "license": "MIT",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "9d6a7e53b91595139adb3d71d05276ea61f7da9f"
+  },
+  "_source": "git@github.com:andypinet/sassstd.git",
+  "_target": "~0.2.0",
+  "_originalSource": "scss-lfx-sassstd",
+  "_direct": true,
+  "license": "MIT",  
   "ignore": [
     "**/.*",
     "node_modules",
